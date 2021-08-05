@@ -36,6 +36,7 @@ axios.interceptors.response.use(
             const code = error.response.status
             const msg = error.response.data.message
             ElMessage.error(`Code: ${code}, Message: ${msg}`)
+            // eslint-disable-next-line no-console
             console.error(`[Axios Error]`, error.response)
         } else {
             ElMessage.error(`${error}`)

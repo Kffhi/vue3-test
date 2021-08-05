@@ -1,6 +1,6 @@
 <template>
     <div class="test-container page-container">
-        <div class="page-title">Unit Test Page</div>
+        <div class="page-title">模型仓库</div>
         <p>count is: {{ count }}</p>
         <button @click="increment">increment</button>
     </div>
@@ -10,7 +10,7 @@
 import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
-    name: 'Test',
+    name: 'ModelRepository',
     setup() {
         const count = ref<number>(0)
         const increment = () => {
